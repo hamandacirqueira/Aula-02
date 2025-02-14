@@ -1,0 +1,54 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos para a seção principal */
+.principal {
+    display: flex; /* Usa flexbox para alinhar a foto e o texto lado a lado */
+    padding: 20px;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilos para a foto de perfil */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Cria um círculo */
+    margin-right: 20px; /* Adiciona um espaço entre a foto e o texto */
+    border: 5px solid #ddd; /* Adiciona uma borda */
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+}
+
+/* Estilos para a seção sobre mim */
+.sobre-mim {
+    flex: 1; /* Ocupa o espaço restante na seção principal */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0; /* Coloca o rodapé na parte inferior */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+}
+
+/* Media query para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column; /* Empilha a foto e o texto em telas menores */
+        align-items: center; /* Centraliza os itens em telas menores */
+    }
+
+    .foto-perfil {
+        margin-right: 0; /* Remove a margem da foto em telas menores */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da foto em telas menores */
+    }
+}
